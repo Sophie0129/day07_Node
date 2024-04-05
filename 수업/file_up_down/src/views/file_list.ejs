@@ -1,0 +1,12 @@
+
+<link href="/static/css/test.css" rel="stylesheet">
+
+<% list.forEach( data => {%>
+    <img src="/file/download/<%= data %>" width="100px" height="100px">
+    <a href="/file/download/<%= data %>"><%= data %></a> 
+    <a href="/file/deleteFile/<%= data %>">파일 삭제</a>
+    
+    <a href="/file/modify_form/<%= data %>">수정</a>
+    
+    <hr>
+<% }) %>
